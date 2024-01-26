@@ -1,0 +1,335 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+        }
+
+        header {
+            position: relative;
+            background-image: url('https://wallpapercave.com/wp/wp4489084.jpg'); /* Replace with your actual image path */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            height: 100vh; /* Make header cover the entire viewport height */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /*background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent 50%, rgba(0, 0, 0, 0.7));*/
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px; /* Add left padding to the navbar */
+            padding-right: 20px; /* Add right padding to the navbar */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            transition: background 0.3s ease; /* Added transition for smoother background change */
+            margin-top: 25px;
+        }
+
+        .logo {
+            margin-left: 250px;
+            padding-left: 20px; /* Adjusted padding for responsiveness */
+            padding-top: 10px;
+        }
+
+        nav {
+            float: right;
+            margin-right: 250px;
+            padding-right: 20px; /* Adjusted padding for responsiveness */
+            padding-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allow navigation items to wrap to the next line on smaller screens */
+        }
+
+        nav li {
+            margin-left: 45px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease; /* Added transition for smoother color change */
+        }
+
+        nav a:hover {
+            color: blueviolet; /* Change color on hover */
+        }
+
+        section {
+            padding: 40px;
+            margin-top: 100px; /* Adjust this value based on your header height */
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 100px;
+            padding: 50px; /* Adjusted padding for responsiveness */
+
+        }
+
+        .about-image {
+            width: 350px; /* Adjust the width of the image */
+            border-radius: 50%; /* Make the image circular */
+            padding-left: 200px;
+            
+        }
+
+        .about-text {
+            width: 60%; /* Adjust the width of the text */
+            padding: 20px; /* Add padding to the text */
+            padding-right: 50px;
+        }
+
+        .about-text h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+            
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: white;
+        }
+
+
+
+
+        /*  Portfolio  */
+
+       .portfolio-title {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            width: 500px;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin-left:  22%;
+            margin-top: 10%;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            color: #fff;
+        }
+
+
+        #modal-image {
+            width: 1000px;
+            max-height: 600px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .project-info {
+            margin-top: 20px;
+        }
+
+
+
+
+        /* Updated Styles for Skills Section */
+        .skills-container {
+            background-color: #000000;
+            padding: 80px 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .skills-title {
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .skills-bar {
+            display: inline-block;
+            width: 200px;
+            margin: 0 20px;
+        }
+
+        .skills-bar-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .skills-bar-progress {
+            background-color: #ffffff;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-bar-progress span {
+            display: block;
+            height: 100%;
+            border-radius: 15px;
+            background: linear-gradient(to right, blueviolet, blueviolet);
+            width: 0;
+            transition: width 1s;
+            color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        /* JavaScript Animation Class */
+        .animate {
+            animation: expandWidth 1s;
+        }
+
+        @keyframes expandWidth {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+
+        
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 20px 0;
+                height: auto; /* Reset height for smaller screens */
+            }
+
+            .overlay {
+                text-align: center;
+            }
+
+            .navbar {
+                position: static;
+                padding-left: 0; /* Reset left padding for smaller screens */
+                padding-right: 0; /* Reset right padding for smaller screens */
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                float: none;
+                margin-top: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image,
+            .about-text {
+                width: 100%; /* Make the image and text full-width on smaller screens */
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+
+            .contact-links {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .contact-links a {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+
+       
+    

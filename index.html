@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header id="home">
+        <div class="overlay">
+            <h1>Hi There, I'm Louis Garcia</h1>
+            <p>Welcome to my portfolio. Explore my work and skills below.</p>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="your-logo.png" alt="Brand"> <!-- Replace with actual logo path -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="lou3.jpg" alt="Your Image" width="100%" height="100%">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hey, I'm Louis Garcia, a 20-year-old who might seem shy at first, but trust me the shyness wears off real quick once we get talking. Online games, you'll find me as "Skully," diving into various games like Dota 2. Besides gaming, I'm all about web design and efficient web development.
+                    I kicked off my programming journey two years ago, and since then, I've been hungry to learn and expand my skills. My thing is crafting website layouts with a vibe—I love using dark colors like black, gray, white, and a splash of violet for that minimalist look.
+                    I'm decent with HTML, CSS, and dabble in a bit of JavaScript, but I know there's a whole lot more to pick up. Excited to see where this journey takes me and ready to level up my web dev game!
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.facebook.com/your-profile" target="_blank">Facebook</a>
+                    <a href="mailto:your-email@example.com">Email</a>
+                    <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="portfolio">
+        <h2 class="portfolio-title">Portfolio</h2>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openModal('My First HTML Website', 'In this project we were tasked to create our own html website with our own imagination and interest. When making this I had a lot of fun making it because it was my first html website to create and I got to try out my skills', 'project1.png')">
+                <img src="project1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>  
+                </div>
+            </div>
+    
+            <div class="gallery-item" onclick="openModal('Website Using VueJS', 'In this project we were tasked to make a website using VueJS it was fairly easy because of how our professor taught us but I only know the basics about it', 'project2.png')">
+                <img src="project2.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>VueJS</li>
+                    </ul>  
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('First WordPress Website', 'This website is like a blog style where I talk about the games I play and I review them or give out tips and tricks. Check out the full website experience --link below', 'project3.png')">
+                <img src="project3.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <a href="https://skzllycom.wordpress.com/">skzllycom</a>
+                    <ul>
+                        <li>WORDPRESS</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('Client Group WordPress Project', 'This website project was a group project and we were tasked to follow the clients wants in the website and to do our best to make his website look great. In this website my role was UI design like the home screen and the images provided. Check out the full website experience --link below', 'project4.png')">
+                <img src="project4.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <a href="https://infinitykicks.shop/">Infinitykicks</a>
+                    <ul>
+                        <li>WORDPRESS</li>
+                    </ul>        
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('RedHat Certificate', 'Completed the RedHat class', 'certificate1.png')">
+                <img src="certificate1.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Certificate</h3>
+                    <p>Certificate Of Attendance</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('Application System Integration', 'This website was a group project as well were we created this for our Integration class using API and other integration apps. Check out the full website experience --link below', 'project5.png')">
+                <img src="project5.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 5</h3>
+                    <a href="https://devdarlings.bitbucket.io">DevDarlings</a>
+                    <ul>
+                        <li>WORDPRESS</li>
+                        <li>PHP</li>
+                    </ul> 
+                </div>
+            </div>
+    
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+    <!-- Modal (keep as it is) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            
+            <img id="modal-image" src="" alt="Project Image">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Updated Skills Section -->
+    <section class="skills-container" id="skills">
+        <h2 class="skills-title">Skills</h2>
+
+        <!-- HTML Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">HTML</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 80%;"><b>80%</b></span>
+            </div>
+        </div>
+
+        <!-- CSS Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">CSS</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 70%;"><b>70%</b></span>
+            </div>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">JavaScript</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 60%;"><b>60%</b></span>
+            </div>
+        </div>
+
+        <!-- WordPress Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">WordPress</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 80%;"><b>80%</b></span>
+            </div>
+        </div>
+
+        <!-- Python Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">Python</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 60%;"><b>60%</b></span>
+            </div>
+        </div>
+
+        <!-- Java Skill -->
+        <div class="skills-bar">
+            <div class="skills-bar-label">Java</div>
+            <div class="skills-bar-progress">
+                <span class="animate" style="width: 50%;"><b>50%</b></span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Script  -->
+     <script src="script.js"></script>
+
+</body>
+</html>
